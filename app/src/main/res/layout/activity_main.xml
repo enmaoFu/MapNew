@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/start_location"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#50acf4"
+        android:text="开始定位"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/stop_location"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#50acf4"
+        android:text="停止定位"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/current_address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@id/stop_location"
+        android:layout_toRightOf="@id/start_location"
+        android:layout_alignParentBottom="true"
+        android:background="#10acf4"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+</RelativeLayout>
